@@ -14,26 +14,38 @@
     <link rel="stylesheet" href="/CSS/styles.css" />
   </head>
   <body>
-    <blockquote class="quote">
-      <p class="quote__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum
-        minima natus est ab sit suscipit quibusdam libero sint fuga?
-      </p>
-      <footer>
-        <div class="media">
-          <div class="media__image">
-            <svg class="icon icon--primaty quote__line">
-              <use xlink:href="image/sprite.svg#line"></use>
-            </svg>
+      <div class="card testimonial">
+        <div class="grid grid--1x2">
+          <div class = "testimonial__image">
+            <img src="/image/testimonial.jpg" alt="">
+            <span class = "icon-container icon-container--accent">
+              <svg class = "icon icon--white icon--small">
+                <use xlink:href="image/sprite.svg#quotes"></use>
+              </svg>
+            </span>
           </div>
-          <div class="media__body">
-            <h3 class="media__title quote__author">John Smith</h3>
-            <p class = "quote__company">
-              ABC Company
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum
+              minima natus est ab sit suscipit quibusdam libero sint fuga?
             </p>
-          </div>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primaty quote__line">
+                    <use xlink:href="image/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">John Smith</h3>
+                  <p class = "quote__company">
+                    ABC Company
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
         </div>
-      </footer>
-    </blockquote>
+      </div>
   </body>
 </html>
