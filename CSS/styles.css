@@ -196,6 +196,13 @@ a{
     text-transform: uppercase;
     white-space: nowrap;
 }
+
+.btn .icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.75rem;
+    vertical-align: middle;
+}
 .btn--streched{
     padding-left: 6rem;
     padding-right: 6rem;
@@ -262,7 +269,7 @@ a{
 }
 
 .input-group .input{
-    padding: 1.5rem 1 rem;
+    padding: 1.5rem 2rem;
     border: 0;
     flex-grow: 1;
 }
@@ -679,4 +686,28 @@ a{
         align-self: center;
     }
 }
+/* Domain Block */
 
+.block-domain .input-group{
+    box-shadow: 0 10px 30px 10px #e6ebee;
+    border: 0;
+    max-width: 670px;
+    margin: 4rem auto;
+}
+
+.block-domain__prices{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){ 
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
