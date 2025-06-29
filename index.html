@@ -23,7 +23,9 @@
   <body>
     <header>
       <nav class="nav collapsible">
-        <a class = "nav__brand" href="/"><img src="image/logo.svg" alt=""></a>
+        <a class = "nav__brand" href="/">
+          <img src="image/logo.svg" alt="">
+        </a>
         <svg class = "icon icon--white nav__toggler">
           <use xlink:href="image/sprite.svg#menu"></use>
         </svg>
@@ -391,7 +393,7 @@
         </div>
     </div>
     </footer>
-    <script src="js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
